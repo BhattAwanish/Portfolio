@@ -106,7 +106,7 @@ document.getElementById("hero").innerHTML = `
 
     <div class="flex justify-center">
       <div class="w-72 h-72 rounded-full shadow-xl bg-gradient-to-br from-indigo-200 to-cyan-200 p-2 float-animation">
-        <img src="image/photo.jpg" class="hero-photo" />
+        <img src="photo.jpg" class="hero-photo" />
 
       </div>
     </div>
@@ -333,14 +333,14 @@ document.getElementById("certificates").innerHTML = `
 
       <!-- Certificate 1 -->
       <div class="certificate-card bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition">
-        <img src="assets/certificate1.jpg" class="rounded-lg shadow mb-4" alt="Deloitte Certificate">
+        <img src="certificate1.jpg" class="rounded-lg shadow mb-4" alt="Deloitte Certificate">
         <h3 class="font-bold text-lg">Deloitte – Data Analytics Job Simulation</h3>
         <p class="text-gray-600">Certificate of Completion • July 7th, 2025</p>
       </div>
 
       <!-- Certificate 2 -->
       <div class="certificate-card bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition">
-        <img src="assets/certificate2.jpg" class="rounded-lg shadow mb-4" alt="TATA Forage Certificate">
+        <img src="certificate2.jpg" class="rounded-lg shadow mb-4" alt="TATA Forage Certificate">
         <h3 class="font-bold text-lg">TATA – GenAI Data Analytics Job Simulation</h3>
         <p class="text-gray-600">Certificate of Completion • July 7th, 2025</p>
       </div>
@@ -474,6 +474,7 @@ function sendMail(e) {
   // Use '\n\n' (escaped newline) inside a normal string — valid and safe.
   window.location.href = `mailto:awanishbhatt807@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\n' + email)}`;
 }
+
 
 
 
