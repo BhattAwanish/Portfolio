@@ -322,46 +322,39 @@ document.getElementById("skills").innerHTML = `
    CERTIFICATES RENDER
 ============================= */
 
+/* =============================
+   CERTIFICATES RENDER
+============================= */
+
 document.getElementById("certificates").innerHTML = `
-  <section class="py-16 px-6 md:px-16">
-    
-    <h2 class="text-4xl font-bold mb-10 text-center fade-in">
-      🎓 Certificates
-    </h2>
+  <h2 class="text-4xl font-bold text-center mb-16 flex justify-center items-center gap-3 fade-in-up">
+      <span>🎓</span> Certificates
+  </h2>
 
-    
-
-   <div id="cert-grid" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6">
 
       <!-- Certificate 1 -->
-      <div class="certificate-card bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition">
-        <img src="certificate1.jpg" class="rounded-lg shadow mb-4" alt="Deloitte Certificate">
-        <h3 class="font-bold text-lg">Deloitte – Data Analytics Job Simulation</h3>
-        <p class="text-gray-600">Certificate of Completion • July 7th, 2025</p>
+      <div class="certificate-card fade-in-up">
+          <img src="certificate1.jpg" alt="Deloitte Certificate" class="cert-img" />
+          <h3 class="font-semibold text-lg mt-4">Deloitte – Data Analytics Job Simulation</h3>
+          <p class="text-gray-600 text-sm">Certificate of Completion • July 7th, 2025</p>
       </div>
 
       <!-- Certificate 2 -->
-      <div class="certificate-card bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition">
-        <img src="certificate2.jpg" class="rounded-lg shadow mb-4" alt="TATA Forage Certificate">
-        <h3 class="font-bold text-lg">TATA – GenAI Data Analytics Job Simulation</h3>
-        <p class="text-gray-600">Certificate of Completion • July 7th, 2025</p>
+      <div class="certificate-card fade-in-up">
+          <img src="certificate2.jpg" alt="TATA GenAI Certificate" class="cert-img" />
+          <h3 class="font-semibold text-lg mt-4">TATA – GenAI Data Analytics Job Simulation</h3>
+          <p class="text-gray-600 text-sm">Certificate of Completion • July 7th, 2025</p>
       </div>
 
-         <div class="certificate-card fade-in-up">
-  <img src="certificate3.jpg" alt="Ducat Data Science Certificate" class="cert-img" />
-  <h3 class="font-semibold text-lg mt-4">Ducat – Data Science, AI & DSA Training</h3>
-  <p class="text-gray-600 text-sm">Completed 90-Hour Professional Training • July–Aug 2025</p>
-</div>
+      <!-- Certificate 3 (NEW) -->
+      <div class="certificate-card fade-in-up">
+          <img src="certificate3.jpg" alt="Ducat Data Science Certificate" class="cert-img" />
+          <h3 class="font-semibold text-lg mt-4">Ducat – Data Science, AI & DSA Training</h3>
+          <p class="text-gray-600 text-sm">Completed 90-Hour Professional Training • July–Aug 2025</p>
+      </div>
 
-    </div>
-  
-
-    </div>
-    
-    
-
-     
-     
+  </div>
   </section>
 `;
 
@@ -482,6 +475,7 @@ function sendMail(e) {
   // Use '\n\n' (escaped newline) inside a normal string — valid and safe.
   window.location.href = `mailto:awanishbhatt807@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\n' + email)}`;
 }
+
 
 
 
