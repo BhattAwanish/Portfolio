@@ -329,7 +329,9 @@ document.getElementById("certificates").innerHTML = `
       🎓 Certificates
     </h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    
+
+   <div id="cert-grid" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
       <!-- Certificate 1 -->
       <div class="certificate-card bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition">
@@ -344,6 +346,12 @@ document.getElementById("certificates").innerHTML = `
         <h3 class="font-bold text-lg">TATA – GenAI Data Analytics Job Simulation</h3>
         <p class="text-gray-600">Certificate of Completion • July 7th, 2025</p>
       </div>
+
+         <div class="certificate-card fade-in-up">
+  <img src="assets/certificate3.jpg" alt="Ducat Data Science Certificate" class="cert-img" />
+  <h3 class="font-semibold text-lg mt-4">Ducat – Data Science, AI & DSA Training</h3>
+  <p class="text-gray-600 text-sm">Completed 90-Hour Professional Training • July–Aug 2025</p>
+</div>
 
     </div>
   
@@ -474,6 +482,7 @@ function sendMail(e) {
   // Use '\n\n' (escaped newline) inside a normal string — valid and safe.
   window.location.href = `mailto:awanishbhatt807@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\n' + email)}`;
 }
+
 
 
 
