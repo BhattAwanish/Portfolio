@@ -154,11 +154,16 @@ overflow: hidden;
   box-shadow: 0 12px 30px rgba(0,0,0,0.18);
 }
 
-.certificate-card img {
+.cert-img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 260px;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 
 .certificate-card h3 {
   padding: 12px 20px 0 20px;
@@ -309,3 +314,4 @@ footer {
 }
 
   
+
