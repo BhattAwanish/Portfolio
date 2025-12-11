@@ -348,7 +348,7 @@ document.getElementById("certificates").innerHTML = `
       </div>
 
          <div class="certificate-card fade-in-up">
-  <img src="assets/certificate3.jpg" alt="Ducat Data Science Certificate" class="cert-img" />
+  <img src="certificate3.jpg" alt="Ducat Data Science Certificate" class="cert-img" />
   <h3 class="font-semibold text-lg mt-4">Ducat – Data Science, AI & DSA Training</h3>
   <p class="text-gray-600 text-sm">Completed 90-Hour Professional Training • July–Aug 2025</p>
 </div>
@@ -482,6 +482,7 @@ function sendMail(e) {
   // Use '\n\n' (escaped newline) inside a normal string — valid and safe.
   window.location.href = `mailto:awanishbhatt807@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\n' + email)}`;
 }
+
 
 
 
